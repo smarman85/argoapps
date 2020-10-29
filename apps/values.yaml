@@ -4,3 +4,8 @@ spec:
   source:
     repoURL: https://github.com/smarman85/argocdapps
     targetRevision: HEAD
+applications:
+  gosite:
+    path: k8s
+    repoURL: https://github.com/smarman85/goSite.git
+    targetBrach: master

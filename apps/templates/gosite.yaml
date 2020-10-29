@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gosite
+  namespace: gosite
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: gosite
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    path: {{ .Values.applications.gosite.path }}
+    repoURL: {{ .Values.applications.gosite.repoURL }}
+    targetRevision: {{ .Values.applications.gosite.targetBrach }}
