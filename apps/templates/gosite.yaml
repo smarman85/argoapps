@@ -9,6 +9,9 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: {{ .Values.applications.gosite.path }}
-    repoURL: {{ .Values.applications.gosite.repoURL }}
-    targetRevision: {{ .Values.applications.gosite.targetBrach }}
+    repoURL: https://smarman85.github.io/goSite/gosite-1.0.0.tgz
+    chart: gosite
+    targetRevision: "1.0.0"
+    #path: {{ .Values.applications.gosite.path }}
+    #repoURL: {{ .Values.applications.gosite.repoURL }}
+    #targetRevision: {{ .Values.applications.gosite.targetBrach }}
