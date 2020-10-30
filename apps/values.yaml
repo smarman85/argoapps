@@ -1,10 +1,10 @@
 spec:
-  namespace: argoapps
   destination:
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/argoproj/argocd-example-apps
     targetRevision: HEAD
+namespace: argoapps
 applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
