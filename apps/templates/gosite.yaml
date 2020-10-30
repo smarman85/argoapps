@@ -11,7 +11,7 @@ spec:
   source:
     helm:
       valueFiles:
-        - gosite-values.yaml
+        - ../gosite-values.yaml
     repoURL: {{ .Values.applications.gosite.repoURL }}
     chart: {{ .Values.applications.gosite.chart }}
     targetRevision: {{ .Values.applications.gosite.revision }}
