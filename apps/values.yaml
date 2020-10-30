@@ -6,6 +6,6 @@ spec:
     targetRevision: HEAD
 applications:
   gosite:
-    path: k8s
-    repoURL: https://github.com/smarman85/goSite.git
-    targetBrach: master
+    repoURL: https://smarman85.github.io/goSite/
+    chart: gosite
+    revision: "1.0.2"
