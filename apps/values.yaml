@@ -8,4 +8,4 @@ applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
     chart: gosite
-    revision: "1.0.2"
+    revision: "1.0.3"
