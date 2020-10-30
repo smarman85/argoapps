@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: sync-waves
+    namespace: {{ .Values.namespace }}
     server: {{ .Values.spec.destination.server }}
   project: default
   source:

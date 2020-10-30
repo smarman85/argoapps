@@ -1,4 +1,5 @@
 spec:
+  namespace: argoapps
   destination:
     server: https://kubernetes.default.svc
   source:
