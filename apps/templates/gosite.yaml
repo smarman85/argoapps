@@ -9,9 +9,9 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    helm:
-      valueFiles:
-        - gosite-values.yaml
+    #helm:
+    #  valueFiles:
+    #    - gosite-values.yaml
     repoURL: {{ .Values.applications.gosite.repoURL }}
     chart: {{ .Values.applications.gosite.chart }}
     targetRevision: {{ .Values.applications.gosite.revision }}
