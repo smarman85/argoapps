@@ -18,15 +18,13 @@ spec:
     repoURL: {{ $value.repoURL }}
     {{- else -}}
     repoURL: {{ $.Values.spec.source.repoURL }}
-    {{- end }}
-    {{ if $value.chart -}}
+    {{- end -}}
+    {{ if $value.chart }}
     chart: {{ $value.chart }}
-    {{- else -}}
-    chart: {{ $.Values.applications.gosite.chart }}
     {{- end }}
     {{ if $value.revision -}}
     targetRevision: {{ $value.revision }}
     {{- else -}}
-    targetRevision: {{ $.Values.applications.gosite.revision }}
+    targetRevision: {{ $.Values.spec.source.targetRevision }}
     {{- end }}
 {{ end }}
