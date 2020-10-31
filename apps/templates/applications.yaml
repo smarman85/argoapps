@@ -11,9 +11,11 @@ spec:
     server: {{ $.Values.spec.destination.server }}
   project: default
   source:
-    #helm:
-    #  valueFiles:
-    #    - gosite-values.yaml
+    {{- if $value.overrideFile }}
+    helm:
+      valueFiles:
+        - {{ $value.overrideFile }}
+    {{- end }}
     {{ if $value.repoURL -}}
     repoURL: {{ $value.repoURL }}
     {{- else -}}
