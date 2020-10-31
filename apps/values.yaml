@@ -11,7 +11,7 @@ applications:
     repoURL: https://smarman85.github.io/goSite/
     chart: gosite
     revision: "1.0.5"
-    overrideFile: gosite-values.yaml
+    overrideFile: https://raw.githubusercontent.com/smarman85/goSite/gh-pages/docs/gosite-values.yaml
   helm-guestbook: {}
   helm-hooks: {}
   kustomize-guestbook: {}
