@@ -1,3 +1,4 @@
+# Defaults
 spec:
   destination:
     server: https://kubernetes.default.svc
@@ -6,12 +7,15 @@ spec:
     targetRevision: HEAD
 namespace: argoapps
 argoNamespace: argocd
+
+# Apps with overrides
 applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
     chart: gosite
     revision: "1.0.5"
-    overrideFile: https://raw.githubusercontent.com/smarman85/goSite/gh-pages/docs/gosite-values.yaml
+    #overrideFile: https://raw.githubusercontent.com/smarman85/goSite/gh-pages/docs/gosite-values.yaml
+    overrideFile: ./gosite-values.yaml
   helm-guestbook: {}
   helm-hooks: {}
   kustomize-guestbook: {}
