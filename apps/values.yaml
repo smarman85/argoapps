@@ -1,3 +1,6 @@
+#Defaults
+namespace: argoapps
+argoNamespace: argocd
 #Apps with overrides
 applications:
   gosite:
@@ -5,16 +8,3 @@ applications:
     chart: gosite
     revision: "1.0.8"
     overrideFile: overrides/gosite.yaml
-      #overrideFile: https://raw.githubusercontent.com/smarman85/goSite/gh-pages/gosite/overrides/gosite.yaml
-  helm-guestbook: {}
-  helm-hooks: {}
-#Defaults
-spec:
-  destination:
-    server: https://kubernetes.default.svc
-  source:
-    repoURL: https://github.com/argoproj/argocd-example-apps
-    targetRevision: HEAD
-namespace: argoapps
-argoNamespace: argocd
-
