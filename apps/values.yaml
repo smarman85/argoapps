@@ -1,4 +1,3 @@
-# Defaults
 namespace: argoapps
 helmVersion: v3
 argoNamespace: argocd
@@ -12,7 +11,7 @@ applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
     chart: gosite
-    revision: "1.0.6"
+    revision: "1.0.7"
     overrideFile: overrides/gosite.yaml
   helm-guestbook: {}
   helm-hooks: {}
