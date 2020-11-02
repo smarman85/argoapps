@@ -6,9 +6,6 @@ applications:
     revision: "1.0.8"
     overrideFile: overrides/gosite.yaml
       #overrideFile: https://raw.githubusercontent.com/smarman85/goSite/gh-pages/gosite/overrides/gosite.yaml
-    params:
-      env: homelab
-      val: testing
   helm-guestbook: {}
   helm-hooks: {}
     #kustomize-guestbook: {}
