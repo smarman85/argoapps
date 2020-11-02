@@ -1,13 +1,3 @@
-#Defaults
-spec:
-  destination:
-    server: https://kubernetes.default.svc
-  source:
-    repoURL: https://github.com/argoproj/argocd-example-apps
-    targetRevision: HEAD
-namespace: argoapps
-argoNamespace: argocd
-
 #Apps with overrides
 applications:
   gosite:
@@ -23,3 +13,13 @@ applications:
   helm-hooks: {}
     #kustomize-guestbook: {}
     #sync-waves: {}
+#Defaults
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/argoproj/argocd-example-apps
+    targetRevision: HEAD
+namespace: argoapps
+argoNamespace: argocd
+
