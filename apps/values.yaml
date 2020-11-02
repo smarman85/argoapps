@@ -10,7 +10,7 @@ applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
     chart: gosite
-    revision: "1.0.5"
+    revision: "1.0.6"
     overrideFile: gosite-values.yaml
   helm-guestbook: {}
   helm-hooks: {}
