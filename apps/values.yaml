@@ -14,11 +14,11 @@ applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
     chart: gosite
+    revision: "1.0.8"
+    overrideFile: overrides/gosite.yaml
     params:
       env: homelab
       val: testing
-    revision: "1.0.8"
-    overrideFile: overrides/gosite.yaml
   helm-guestbook: {}
   helm-hooks: {}
   kustomize-guestbook: {}
