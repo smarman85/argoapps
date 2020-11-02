@@ -15,14 +15,7 @@ spec:
     helm:
       valueFiles:
         - {{ $value.overrideFile }}
-      {{ if $value.params -}}
-      parameters: 
-        {{- range $k, $v := $value.params }}
-        - name: {{ $k }}
-          value: {{ $v }}
-        {{ end -}}
-      {{ end }}
-    {{- end -}}
+    {{- end }}
     {{ if $value.repoURL -}}
     repoURL: {{ $value.repoURL }}
     {{- else -}}
@@ -37,4 +30,3 @@ spec:
     targetRevision: {{ $.Values.spec.source.targetRevision }}
     {{- end }}
 {{ end }}
-
