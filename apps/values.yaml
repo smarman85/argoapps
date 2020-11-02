@@ -17,6 +17,6 @@ applications:
       val: testing
   helm-guestbook: {}
   helm-hooks: {}
-  kustomize-guestbook: {}
-  sync-waves: {}
-  helm-guestbook: {}
+    #helm-guestbook: {}
+    #kustomize-guestbook: {}
+    #sync-waves: {}
