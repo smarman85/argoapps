@@ -17,7 +17,7 @@ applications:
     params:
       env: homelab
       val: testing
-    revision: "1.0.7"
+    revision: "1.0.8"
     overrideFile: overrides/gosite.yaml
   helm-guestbook: {}
   helm-hooks: {}
