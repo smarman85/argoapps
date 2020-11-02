@@ -6,5 +6,5 @@ applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
     chart: gosite
-    revision: "1.0.8"
+    revision: "1.0.7"
     overrideFile: overrides/gosite.yaml
