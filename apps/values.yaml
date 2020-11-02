@@ -8,9 +8,9 @@ namespace: argoapps
 argoNamespace: argocd
 applications:
   gosite:
-    repoURL: https://smarman85.github.io/goSite/
-    chart: gosite
-    revision: "1.0.8"
+    repoURL: https://smarman85.github.io/charts/
+    chart: basicChart
+    revision: "0.0.1"
     overrideFile: overrides/gosite.yaml
     params:
       env: homelab
