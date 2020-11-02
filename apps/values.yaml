@@ -8,7 +8,6 @@ spec:
   source:
     repoURL: https://github.com/argoproj/argocd-example-apps
     targetRevision: HEAD
-# Apps with overrides
 applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
