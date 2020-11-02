@@ -10,7 +10,7 @@ applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
     chart: gosite
-    revision: "1.0.7"
+    revision: "1.0.8"
     overrideFile: overrides/gosite.yaml
     params:
       env: homelab
