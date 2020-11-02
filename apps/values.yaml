@@ -17,7 +17,7 @@ applications:
       env: homelab
       val: testing
     revision: "1.0.7"
-    #overrideFile: https://raw.githubusercontent.com/smarman85/goSite/gh-pages/gosite/overrides/gosite.yaml
+      #overrideFile: https://raw.githubusercontent.com/smarman85/goSite/gh-pages/gosite/overrides/gosite.yaml
     overrideFile: overrides/gosite.yaml
   helm-guestbook: {}
   helm-hooks: {}
