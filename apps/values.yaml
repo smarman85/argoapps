@@ -7,15 +7,16 @@ spec:
     targetRevision: HEAD
 namespace: argoapps
 argoNamespace: argocd
-helmVersion: v3
 
 # Apps with overrides
 applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
     chart: gosite
+    params: 
+      env: homelab
     revision: "1.0.7"
-      #overrideFile: https://raw.githubusercontent.com/smarman85/goSite/gh-pages/docs/gosite-values.yaml
+    #overrideFile: https://raw.githubusercontent.com/smarman85/goSite/gh-pages/gosite/overrides/gosite.yaml
     overrideFile: overrides/gosite.yaml
   helm-guestbook: {}
   helm-hooks: {}
