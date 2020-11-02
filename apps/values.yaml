@@ -1,11 +1,19 @@
-#Defaults
-helmVersion: v3
+# Defaults
 namespace: argoapps
+helmVersion: v3
 argoNamespace: argocd
-#Apps with overrides
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/argoproj/argocd-example-apps
+    targetRevision: HEAD
+# Apps with overrides
 applications:
   gosite:
     repoURL: https://smarman85.github.io/goSite/
     chart: gosite
-    revision: "1.0.7"
+    revision: "1.0.6"
     overrideFile: overrides/gosite.yaml
+  helm-guestbook: {}
+  helm-hooks: {}
