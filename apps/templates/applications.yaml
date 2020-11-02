@@ -6,6 +6,8 @@ metadata:
   name: {{ $key }}
   namespace: {{ $.Values.argoNamespace }}
 spec:
+  syncPolicy:
+    automated: {}
   destination:
     namespace: {{ $.Values.namespace }}
     server: {{ $.Values.spec.destination.server }}
