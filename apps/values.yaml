@@ -12,6 +12,9 @@ applications:
     chart: gosite
     revision: "1.0.7"
     overrideFile: overrides/gosite.yaml
+    params:
+      env: homelab
+      val: testing
   helm-guestbook: {}
   helm-hooks: {}
   kustomize-guestbook: {}
