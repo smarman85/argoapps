@@ -1,4 +1,5 @@
 #Defaults
+helmVersion: v3
 namespace: argoapps
 argoNamespace: argocd
 #Apps with overrides

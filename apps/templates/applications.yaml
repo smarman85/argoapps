@@ -13,6 +13,7 @@ spec:
   source:
     {{- if $value.overrideFile }}
     helm:
+      version: {{ $.Values.helmVersion }}
       valueFiles:
         - {{ $value.overrideFile }}
       {{ if $value.params -}}
