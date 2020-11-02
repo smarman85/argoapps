@@ -15,6 +15,13 @@ spec:
     helm:
       valueFiles:
         - {{ $value.overrideFile }}
+      {{- if $value.params }}
+      parameters:
+        {{- range $k, $v := $value.params }}
+        - name: {{ $k }}
+          value: {{ $v }}
+        {{- end }}
+      {{- end }}
     {{- end }}
     {{ if $value.repoURL -}}
     repoURL: {{ $value.repoURL }}
