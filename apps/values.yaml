@@ -10,13 +10,13 @@ applications:
   gosite:
     repoURL: https://smarman85.github.io/charts/
     chart: basicChart
-    revision: "0.0.1"
+    revision: "0.0.2"
     overrideFile: overrides/gosite.yaml
       #overrideFile: https://raw.githubusercontent.com/smarman85/charts/main/overrides/gosite.yaml
     params:
       env: homelab
       val: testing
-      version: 0.0.5
+      version: 0.0.6
   helm-guestbook: {}
   helm-hooks: {}
     #helm-guestbook: {}
