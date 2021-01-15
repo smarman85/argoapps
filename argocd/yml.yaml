@@ -1,0 +1,18 @@
+project: default
+source:
+  repoURL: 'https://smarman85.github.io/charts/'
+  targetRevision: 0.0.1
+  helm:
+    valueFiles:
+      - overrides/gosite.yaml
+    parameters:
+      - name: env
+        value: homelab
+      - name: val
+        value: testing
+  chart: basicChart
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: argoapps
+syncPolicy:
+  automated: {}

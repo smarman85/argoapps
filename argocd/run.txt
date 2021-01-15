@@ -1,0 +1,3 @@
+curl -H "Authorization: Bearer $ARGO_TOKEN" \
+  -X PUT --data @data.json \
+  -k https://127.0.0.1:8099/api/v1/applications/gosite/spec

@@ -1,0 +1,35 @@
+{
+  "destination": {
+    "namespace": "argoapps",
+    "server": "https://kubernetes.default.svc"
+  },
+  "project": "default",
+  "source": {
+    "chart": "basicChart",
+    "helm": {
+      "parameters": [
+        {
+          "name": "env",
+          "value": "homelab"
+        },
+        {
+          "name": "version",
+          "value": "0.0.6"
+        },
+        {
+          "name": "val",
+          "value": "testing"
+        }
+      ],
+      "valueFiles": [
+        "overrides/gosite.yaml"
+      ]
+    },
+    "repoURL": "https://smarman85.github.io/charts/",
+    "targetRevision": "0.0.2"
+  },
+  "syncPolicy": {
+    "automated": {}
+  }
+}
+
