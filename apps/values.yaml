@@ -12,6 +12,7 @@ applications:
     chart: basicChart
     revision: "0.0.1"
     overrideFile: overrides/gosite.yaml
+      #overrideFile: https://raw.githubusercontent.com/smarman85/charts/main/overrides/gosite.yaml
     params:
       env: homelab
       val: testing
