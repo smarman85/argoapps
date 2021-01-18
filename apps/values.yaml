@@ -17,11 +17,6 @@ applications:
       env: homelab
       val: testing
       version: 0.0.6
-      entryPoint: 
-        - "/usr/bin/dumb-init"
-      args:
-        - "--"
-        - "./goSite"
 
   helm-guestbook: {}
   helm-hooks: {}
