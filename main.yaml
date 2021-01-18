@@ -14,4 +14,4 @@ spec:
   source:
     repoURL: https://github.com/smarman85/argoapps
     path: apps
-    revision: HEAD
+    targetRevision: HEAD
