@@ -16,10 +16,10 @@ applications:
     params:
       env: homelab
       val: testing
-      version: 0.0.6
+      version: 0.0.7
 
-  helm-guestbook: {}
-  helm-hooks: {}
-    #helm-guestbook: {}
-    #kustomize-guestbook: {}
-    #sync-waves: {}
+  #helm-guestbook: {}
+  #helm-hooks: {}
+  #helm-guestbook: {}
+  #kustomize-guestbook: {}
+  #sync-waves: {}
