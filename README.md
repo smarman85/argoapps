@@ -10,7 +10,7 @@ $ kubectl port-forward svc/argocd-server -n argocd 8080:443
 $ kubectl apply -f crds/apps.yaml
 ```
 
-## Init apps:
+## Init apps via cli:
 ```bash
 $ argocd app create apps \
 --dest-namespace argocd \
