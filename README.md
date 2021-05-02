@@ -1,5 +1,11 @@
 # argoapps
 
+## Install ArgoCD:
+```bash
+$ kubectl create ns argocd
+$ kubectl apply -f argoCD-install/install.yaml -n argocd
+```
+
 ## localhost set up:
 ```bash
 $ kubectl port-forward svc/argocd-server -n argocd 8080:443
