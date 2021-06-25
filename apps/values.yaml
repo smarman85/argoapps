@@ -4,7 +4,7 @@ spec:
   source:
     repoURL: https://github.com/argoproj/argocd-example-apps
     targetRevision: HEAD
-namespace: argoapps
+namespace: test
 argoNamespace: argocd
 applications:
   gosite:
