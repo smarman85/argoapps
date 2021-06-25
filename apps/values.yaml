@@ -5,7 +5,7 @@ spec:
     repoURL: https://github.com/argoproj/argocd-example-apps
     targetRevision: HEAD
 namespace: demo
-argoNamespace: argocd
+argoNamespace: demo
 applications:
   gosite:
     repoURL: https://smarman85.github.io/charts/
