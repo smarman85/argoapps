@@ -10,8 +10,8 @@ applications:
   gosite:
     repoURL: https://smarman85.github.io/charts/
     chart: basicChart
-    revision: HEAD
-      #revision: 0.0.3
+    revision: 0.0.3
+      #revision: HEAD
     overrideFile: overrides/gosite.yaml
       #overrideFile: https://raw.githubusercontent.com/smarman85/charts/main/overrides/gosite.yaml
     params:

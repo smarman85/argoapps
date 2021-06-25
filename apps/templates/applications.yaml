@@ -38,4 +38,5 @@ spec:
     {{- else -}}
     targetRevision: {{ $.Values.spec.source.targetRevision }}
     {{- end }}
+    path: basicChart
 {{ end }}
