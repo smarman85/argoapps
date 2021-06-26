@@ -4,8 +4,8 @@ spec:
   source:
     repoURL: https://github.com/argoproj/argocd-example-apps
     targetRevision: HEAD
-namespace: demo
-argoNamespace: demo
+namespace: argoapps
+argoNamespace: argocd
 applications:
   gosite:
     repoURL: https://smarman85.github.io/charts/
