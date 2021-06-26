@@ -17,7 +17,7 @@ applications:
     params:
       env: homelab
       val: testing
-      version: 0.0.7
+      version: 0.0.8
 
   #helm-guestbook: {}
   #helm-hooks: {}
